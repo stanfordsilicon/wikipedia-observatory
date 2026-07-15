@@ -1,0 +1,88 @@
+/* app/globals.css
+   Design tokens for the Wikipedia Observatory.
+
+   Concept: a "market floor for language editions" -- part stock exchange,
+   part reading-room ledger. Serif display type nods to the encyclopedia;
+   monospace numerals nod to the ticker. Ink-dark surface, warm gilt accent
+   (evokes old book-spine lettering), green/red for movement -- the one
+   place the palette borrows the literal stock-market convention, because
+   it's the clearest possible signal for "up" and "down".
+*/
+
+:root {
+  --bg: #0b0e14;
+  --surface: #121722;
+  --surface-2: #171d2b;
+  --border: #232a3a;
+  --text: #e8eaf2;
+  --text-muted: #8b93a7;
+  --text-faint: #5b6376;
+  --gold: #d4a73a;
+  --gold-dim: rgba(212, 167, 58, 0.14);
+  --positive: #3dd68c;
+  --negative: #ff6b6b;
+  --radius: 3px;
+
+  --font-display: var(--font-display-loaded), Georgia, serif;
+  --font-body: var(--font-body-loaded), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-mono-loaded), "SFMono-Regular", Menlo, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.negative {
+  color: var(--negative);
+}
+
+.neutral {
+  color: var(--text-faint);
+}
