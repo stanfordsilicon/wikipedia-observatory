@@ -129,7 +129,10 @@ export default function Board({ records }) {
               <tr key={row.code}>
                 <td>
                   <div className="lang-name">{row.language || row.code}</div>
-                  <div className="lang-code mono neutral">{row.code}</div>
+                  <div className="lang-code mono neutral">
+                    {row.code}
+                    {row.iso639_3 ? ` · ISO ${row.iso639_3}` : ""}
+                  </div>
                 </td>
                 <td className="num-col">
                   <Sparkline history={row.history} />

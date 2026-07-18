@@ -46,8 +46,8 @@ export default function Home() {
           <h1>The encyclopedia, charted.</h1>
           <p className="hero-sub">
             Every active Wikipedia language edition, tracked like a market —
-            articles, edits, and contributors, measured against the previous
-            snapshot.
+            articles, edits, contributors, and pageviews, measured against
+            the previous snapshot.
           </p>
         </div>
       </header>
@@ -59,8 +59,10 @@ export default function Home() {
           <p className="mono">
             No snapshot data found in <code>/data</code>. Run{" "}
             <code>python scripts/fetch_wikipedia_stats.py</code> at least
-            once to generate a <code>wikipedia_stats_YYYY-MM-DD.csv</code>{" "}
-            file, commit it, and redeploy.
+            once (after placing <code>iso-639-3.tab</code> in{" "}
+            <code>scripts/</code>) to generate a{" "}
+            <code>wikipedia_idli_data_YYYY-MM-DD.csv</code> file, commit it,
+            and redeploy.
           </p>
         </div>
       ) : (
