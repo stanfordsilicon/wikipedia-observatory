@@ -1,12 +1,10 @@
 /* app/globals.css
    Design tokens for the Wikipedia Observatory.
 
-   Concept: a "market floor for language editions" -- part stock exchange,
+   Concept: a "board for language editions" -- part data console,
    part reading-room ledger. Serif display type nods to the encyclopedia;
    monospace numerals nod to the ticker. Ink-dark surface, warm gilt accent
-   (evokes old book-spine lettering), green/red for movement -- the one
-   place the palette borrows the literal stock-market convention, because
-   it's the clearest possible signal for "up" and "down".
+   (evokes old book-spine lettering), green/red for movement.
 */
 
 :root {

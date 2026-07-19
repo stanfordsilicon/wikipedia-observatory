@@ -22,7 +22,7 @@ const monoFont = JetBrains_Mono({
 export const metadata = {
   title: "Wikipedia Observatory",
   description:
-    "Every active Wikipedia language edition, tracked by articles, edits, and contributors over time -- a stock market view of the encyclopedia.",
+    "Every active Wikipedia language edition, tracked by articles, edits, and contributors over time.",
 };
 
 export default function RootLayout({ children }) {
