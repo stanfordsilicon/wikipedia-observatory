@@ -8,17 +8,19 @@
 */
 
 :root {
-  /* shared brand palette (see idli's globals.css) applied as a dark
-     theme, keeping this app's existing dark orientation. --gold keeps its
-     name to avoid touching every .eyebrow/:focus-visible reference below,
-     but now holds the shared orange accent instead of an actual gold. */
-  --bg: #000000; /* black */
-  --surface: #43301e; /* brown */
-  --surface-2: #6b5238; /* lightened brown, derived */
-  --border: #5a4530; /* lightened brown, derived (matches cldr's --border) */
-  --text: #e8e2d6; /* beige */
-  --text-muted: #a8977f; /* muted beige/brown, derived (matches cldr's --text-muted) */
-  --text-faint: #7a6a54; /* muted further, derived */
+  /* shared brand palette (see idli's globals.css) applied as a light
+     theme -- same recipe as IDLI and cldr-webapp, and warm-neutral enough
+     to sit harmoniously alongside keyman's own light ivory/espresso
+     palette. --gold keeps its name to avoid touching every
+     .eyebrow/:focus-visible reference below, but now holds the shared
+     orange accent instead of an actual gold. */
+  --bg: #e8e2d6; /* beige */
+  --surface: #ffffff; /* white */
+  --surface-2: #f3ede2; /* between beige and white, derived */
+  --border: #dcd3c2; /* light tan, derived (matches idli's --line) */
+  --text: #000000; /* black */
+  --text-muted: #6b5a48; /* muted brown, derived (matches idli's --ink-soft) */
+  --text-faint: #9a8a72; /* muted further, derived */
   --gold: #fb4b1e; /* orange */
   --gold-dim: rgba(251, 75, 30, 0.14);
   --positive: #3dd68c;
